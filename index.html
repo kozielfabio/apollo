@@ -626,12 +626,12 @@
 
   /* ============ RESULTS ============ */
   .results{background:var(--navy-deep);}
-  .results__head{margin-bottom:40px; text-align:center;}
+  .results__head{margin-bottom:28px; text-align:center;}
   .results__head .section-title{margin-inline:auto;}
   .results__head .lede{margin:16px auto 0; text-align:center;}
 
   .results-stack{
-    display:flex; flex-direction:column; gap:28px;
+    display:flex; flex-direction:column; gap:16px;
     max-width:720px; margin-inline:auto;
   }
 
@@ -670,52 +670,31 @@
     border:1px solid var(--neon-border);
     box-shadow:none;
   }
-  .result-card__caption{
-    padding:14px 16px 16px;
-    display:flex; align-items:center; justify-content:space-between; gap:12px;
-  }
-  .result-card__caption-title{
-    font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
-    color:var(--text-primary);
-  }
-  .result-card__caption-sub{
-    font-size:11px; color:var(--text-secondary); margin-top:4px;
-  }
-
-  /* pair grid for 2 singles side by side on wider mobile */
   .result-pair{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:12px;
+    gap:10px;
   }
   .result-pair .result-card{margin:0;}
-  .result-pair .result-card__media{aspect-ratio:3/4;}
+  .result-pair .result-card__media{
+    aspect-ratio:3/4;
+  }
   .result-pair .result-card__media img{
     width:100%; height:100%; object-fit:cover;
   }
 
   .result-eyes{
     display:grid;
-    grid-template-columns:1fr;
-    gap:12px;
-  }
-  @media (min-width:520px){
-    .result-eyes{grid-template-columns:1fr 1fr;}
-  }
-
-  .results-note{
-    text-align:center;
-    font-size:12px;
-    color:var(--text-secondary);
-    letter-spacing:.04em;
-    margin-top:8px;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
   }
 
   @media (max-width:560px){
-    .results-stack{gap:20px; padding-inline:0;}
+    .results-stack{gap:12px; padding-inline:0;}
     .result-card{border-radius:10px;}
-    .result-card__caption{padding:12px 14px 14px;}
     .result-card__badge{top:10px; left:10px; font-size:9.5px; padding:5px 9px;}
+    .result-pair{gap:8px;}
+    .result-eyes{gap:8px;}
   }
 
   /* ============ PROBLEM ============ */
@@ -1188,163 +1167,103 @@
     <div class="results__head">
       <div class="eyebrow reveal-line">PROVA REAL</div>
       <h2 class="section-title reveal-line" style="font-size:clamp(2rem,4.2vw,3rem); margin-top:16px;">
-        Eles pararam de se esconder.<br>O espelho devolveu a confiança.
+        Resultado de quem aplicou.
       </h2>
-      <p class="lede reveal-fade">Resultados reais de quem aplicou o método. Sem filtro. Sem mentira.</p>
     </div>
 
     <div class="results-stack">
 
-      <!-- 1. HIT forte: transformação frontal rotulada -->
+      <!-- 1. B&A frontal forte -->
       <article class="result-card reveal-fade">
         <div class="result-card__media">
           <span class="result-card__badge">Antes → Depois</span>
-          <img src="src/img/antesedepois3.jpeg" alt="Antes e depois Apollo Method - transformação facial" loading="lazy" decoding="async"
+          <img src="src/img/antesedepois3.jpeg" alt="Antes e depois Apollo Method" loading="lazy" decoding="async"
                onerror="this.style.opacity=.3">
-        </div>
-        <div class="result-card__caption">
-          <div>
-            <div class="result-card__caption-title">Transformação completa</div>
-            <div class="result-card__caption-sub">Presença, cabelo e definição facial</div>
-          </div>
         </div>
       </article>
 
-      <!-- 2. Perfil com seta (muito dopaminérgico) -->
+      <!-- 2. Perfil -->
       <article class="result-card reveal-fade">
         <div class="result-card__media">
           <span class="result-card__badge">Perfil</span>
-          <img src="src/img/antesedepois7.jpeg" alt="Antes e depois Apollo Method - perfil e mandíbula" loading="lazy" decoding="async"
+          <img src="src/img/antesedepois7.jpeg" alt="Antes e depois perfil Apollo Method" loading="lazy" decoding="async"
                onerror="this.style.opacity=.3">
-        </div>
-        <div class="result-card__caption">
-          <div>
-            <div class="result-card__caption-title">Mandíbula e postura</div>
-            <div class="result-card__caption-sub">Do invisível ao que chama atenção</div>
-          </div>
         </div>
       </article>
 
-      <!-- 3. Cabelo / estilo lateral -->
-      <article class="result-card reveal-fade">
-        <div class="result-card__media">
-          <span class="result-card__badge">Cabelo + estilo</span>
-          <img src="src/img/antesedepois2.jpeg" alt="Antes e depois Apollo Method - cabelo e estilo" loading="lazy" decoding="async"
-               onerror="this.style.opacity=.3">
-        </div>
-        <div class="result-card__caption">
-          <div>
-            <div class="result-card__caption-title">Cabelo que muda a percepção</div>
-            <div class="result-card__caption-sub">Corte e presença no perfil</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 4. Progressão 3 etapas (acne/pele) -->
-      <article class="result-card reveal-fade">
-        <div class="result-card__media">
-          <span class="result-card__badge">Progressão</span>
-          <img src="src/img/antesedepois4.jpeg" alt="Progressão Apollo Method - pele e definição em 3 etapas" loading="lazy" decoding="async"
-               onerror="this.style.opacity=.3">
-        </div>
-        <div class="result-card__caption">
-          <div>
-            <div class="result-card__caption-title">Pele e definição ao longo do tempo</div>
-            <div class="result-card__caption-sub">Evolução em etapas, não mágica</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 5. Antes/depois mesmo aluno (sorriso → presença) -->
-      <article class="result-card reveal-fade">
-        <div class="result-card__media">
-          <span class="result-card__badge">Antes → Depois</span>
-          <img src="src/img/antesedepois6.jpeg" alt="Antes e depois Apollo Method - presença e cabelo" loading="lazy" decoding="async"
-               onerror="this.style.opacity=.3">
-        </div>
-        <div class="result-card__caption">
-          <div>
-            <div class="result-card__caption-title">Da insegurança à presença</div>
-            <div class="result-card__caption-sub">Mesmo rosto. Outra energia.</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 6. After hero "2 meses" -->
-      <article class="result-card reveal-fade">
-        <div class="result-card__media">
-          <span class="result-card__badge">2 meses depois</span>
-          <img src="src/img/depois1.jpeg" alt="Resultado Apollo Method após 2 meses" loading="lazy" decoding="async"
-               onerror="this.style.opacity=.3">
-        </div>
-        <div class="result-card__caption">
-          <div>
-            <div class="result-card__caption-title">Resultado em 2 meses</div>
-            <div class="result-card__caption-sub">Consistência > improviso</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 7. Pair: antes5 + depois5 -->
+      <!-- 3. Par: antes1 + depois1 (2 meses) -->
       <div class="result-pair reveal-fade">
         <article class="result-card">
           <div class="result-card__media">
             <span class="result-card__badge result-card__badge--soft">Antes</span>
-            <img src="src/img/antes5.jpeg" alt="Antes Apollo Method" loading="lazy" decoding="async"
-                 onerror="this.style.opacity=.3">
+            <img src="src/img/antes1.jpeg" alt="Antes" loading="lazy" decoding="async" onerror="this.style.opacity=.3">
+          </div>
+        </article>
+        <article class="result-card">
+          <div class="result-card__media">
+            <span class="result-card__badge">2 meses</span>
+            <img src="src/img/depois1.jpeg" alt="2 meses depois" loading="lazy" decoding="async" onerror="this.style.opacity=.3">
+          </div>
+        </article>
+      </div>
+
+      <!-- 4. Cabelo -->
+      <article class="result-card reveal-fade">
+        <div class="result-card__media">
+          <span class="result-card__badge">Cabelo</span>
+          <img src="src/img/antesedepois2.jpeg" alt="Antes e depois cabelo" loading="lazy" decoding="async"
+               onerror="this.style.opacity=.3">
+        </div>
+      </article>
+
+      <!-- 5. Presença -->
+      <article class="result-card reveal-fade">
+        <div class="result-card__media">
+          <span class="result-card__badge">Antes → Depois</span>
+          <img src="src/img/antesedepois6.jpeg" alt="Antes e depois presença" loading="lazy" decoding="async"
+               onerror="this.style.opacity=.3">
+        </div>
+      </article>
+
+      <!-- 6. Progressão pele -->
+      <article class="result-card reveal-fade">
+        <div class="result-card__media">
+          <span class="result-card__badge">Progressão</span>
+          <img src="src/img/antesedepois4.jpeg" alt="Progressão pele e definição" loading="lazy" decoding="async"
+               onerror="this.style.opacity=.3">
+        </div>
+      </article>
+
+      <!-- 7. Par: antes5 + depois5 -->
+      <div class="result-pair reveal-fade">
+        <article class="result-card">
+          <div class="result-card__media">
+            <span class="result-card__badge result-card__badge--soft">Antes</span>
+            <img src="src/img/antes5.jpeg" alt="Antes" loading="lazy" decoding="async" onerror="this.style.opacity=.3">
           </div>
         </article>
         <article class="result-card">
           <div class="result-card__media">
             <span class="result-card__badge">Depois</span>
-            <img src="src/img/depois5.jpeg" alt="Depois Apollo Method" loading="lazy" decoding="async"
-                 onerror="this.style.opacity=.3">
+            <img src="src/img/depois5.jpeg" alt="Depois" loading="lazy" decoding="async" onerror="this.style.opacity=.3">
           </div>
         </article>
       </div>
-      <p class="results-note reveal-fade">Mesmo aluno. Outra presença.</p>
 
-      <!-- 8. Single before residual + after energy (antes1 as social proof of starting point) -->
-      <article class="result-card reveal-fade">
-        <div class="result-card__media">
-          <span class="result-card__badge result-card__badge--soft">Ponto de partida</span>
-          <img src="src/img/antes1.jpeg" alt="Antes de aplicar o Apollo Method" loading="lazy" decoding="async"
-               onerror="this.style.opacity=.3">
-        </div>
-        <div class="result-card__caption">
-          <div>
-            <div class="result-card__caption-title">Todo mundo começa em algum lugar</div>
-            <div class="result-card__caption-sub">O método existe pra quem quer sair daqui</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 9. Eyes detail - proof of detail work -->
+      <!-- 8. Olhos -->
       <div class="result-eyes">
         <article class="result-card reveal-fade">
           <div class="result-card__media">
-            <span class="result-card__badge">Olhar</span>
-            <img src="src/img/olhos1.jpeg" alt="Antes e depois - área dos olhos Apollo Method" loading="lazy" decoding="async"
+            <span class="result-card__badge">Olhos</span>
+            <img src="src/img/olhos1.jpeg" alt="Área dos olhos antes e depois" loading="lazy" decoding="async"
                  onerror="this.style.opacity=.3">
-          </div>
-          <div class="result-card__caption">
-            <div>
-              <div class="result-card__caption-title">Área dos olhos</div>
-              <div class="result-card__caption-sub">Detalhe que muda a presença</div>
-            </div>
           </div>
         </article>
         <article class="result-card reveal-fade">
           <div class="result-card__media">
-            <span class="result-card__badge">Olhar</span>
-            <img src="src/img/olhos2.jpeg" alt="Antes e depois - olhos Apollo Method" loading="lazy" decoding="async"
+            <span class="result-card__badge">Olhos</span>
+            <img src="src/img/olhos2.jpeg" alt="Olhar antes e depois" loading="lazy" decoding="async"
                  onerror="this.style.opacity=.3">
-          </div>
-          <div class="result-card__caption">
-            <div>
-              <div class="result-card__caption-title">Presença no olhar</div>
-              <div class="result-card__caption-sub">Pequeno ajuste, grande diferença</div>
-            </div>
           </div>
         </article>
       </div>
