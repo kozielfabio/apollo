@@ -670,6 +670,17 @@
     border:1px solid var(--neon-border);
     box-shadow:none;
   }
+  .result-card__bar{
+    padding:10px 14px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--neon-blue-soft);
+    border-top:1px solid var(--neon-border);
+    background:rgba(0,0,0,.45);
+  }
+
   .result-pair{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -1173,7 +1184,7 @@
 
     <div class="results-stack">
 
-      <!-- 1. B&A frontal forte -->
+      <!-- 1. B&A frontal -->
       <article class="result-card reveal-fade">
         <div class="result-card__media">
           <span class="result-card__badge">Antes → Depois</span>
@@ -1185,35 +1196,34 @@
       <!-- 2. Perfil -->
       <article class="result-card reveal-fade">
         <div class="result-card__media">
-          <span class="result-card__badge">Perfil</span>
+          <span class="result-card__badge">Mandíbula + perfil</span>
           <img src="src/img/antesedepois7.jpeg" alt="Antes e depois perfil Apollo Method" loading="lazy" decoding="async"
                onerror="this.style.opacity=.3">
         </div>
       </article>
 
-      <!-- 3. Par: antes1 + depois1 (2 meses) -->
+      <!-- 3. Par: 2 meses — SEM badge -->
       <div class="result-pair reveal-fade">
         <article class="result-card">
           <div class="result-card__media">
-            <span class="result-card__badge result-card__badge--soft">Antes</span>
             <img src="src/img/antes1.jpeg" alt="Antes" loading="lazy" decoding="async" onerror="this.style.opacity=.3">
           </div>
         </article>
         <article class="result-card">
           <div class="result-card__media">
-            <span class="result-card__badge">2 meses</span>
             <img src="src/img/depois1.jpeg" alt="2 meses depois" loading="lazy" decoding="async" onerror="this.style.opacity=.3">
           </div>
         </article>
       </div>
 
-      <!-- 4. Cabelo -->
+      <!-- 4. Cabelo — texto forte -->
       <article class="result-card reveal-fade">
         <div class="result-card__media">
-          <span class="result-card__badge">Cabelo</span>
-          <img src="src/img/antesedepois2.jpeg" alt="Antes e depois cabelo" loading="lazy" decoding="async"
+          <span class="result-card__badge">Transformação brutal</span>
+          <img src="src/img/antesedepois2.jpeg" alt="Transformação cabelo mandíbula e rosto" loading="lazy" decoding="async"
                onerror="this.style.opacity=.3">
         </div>
+        <div class="result-card__bar">Cabelo · mandíbula · rosto</div>
       </article>
 
       <!-- 5. Presença -->
@@ -1228,7 +1238,7 @@
       <!-- 6. Progressão pele -->
       <article class="result-card reveal-fade">
         <div class="result-card__media">
-          <span class="result-card__badge">Progressão</span>
+          <span class="result-card__badge">Pele + definição</span>
           <img src="src/img/antesedepois4.jpeg" alt="Progressão pele e definição" loading="lazy" decoding="async"
                onerror="this.style.opacity=.3">
         </div>
@@ -1250,21 +1260,23 @@
         </article>
       </div>
 
-      <!-- 8. Olhos -->
+      <!-- 8. Olhos — texto na pegada -->
       <div class="result-eyes">
         <article class="result-card reveal-fade">
           <div class="result-card__media">
-            <span class="result-card__badge">Olhos</span>
+            <span class="result-card__badge">Olhar mais vivo</span>
             <img src="src/img/olhos1.jpeg" alt="Área dos olhos antes e depois" loading="lazy" decoding="async"
                  onerror="this.style.opacity=.3">
           </div>
+          <div class="result-card__bar">Área dos olhos</div>
         </article>
         <article class="result-card reveal-fade">
           <div class="result-card__media">
-            <span class="result-card__badge">Olhos</span>
+            <span class="result-card__badge">Presença no olhar</span>
             <img src="src/img/olhos2.jpeg" alt="Olhar antes e depois" loading="lazy" decoding="async"
                  onerror="this.style.opacity=.3">
           </div>
+          <div class="result-card__bar">Detalhe que muda tudo</div>
         </article>
       </div>
 
